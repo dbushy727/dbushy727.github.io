@@ -49,16 +49,19 @@ animateCircle1 = function(){
       $('.third_circle').animate({
         height: "toggle", width: "toggle"}, 1000)
       $( ".first_circle" ).animate({
-        height: "-=170px",
-        width: "-=50%",
-        "border-radius": "+=40%"
+        height: "175px",
+        width: "175px",
+        "border-radius": "50%"
       }, 1000);
       $('.first_circle').children().animate({
         top: "45%"}, 1000)
-      $('.body_left').removeClass("sixteen columns").addClass("one-third column")
-      $first_circle.addClass("initial_state");
-      $('.body_middle').show()
-      $('.body_right').show()
+      setTimeout(function(){
+        $('.body_left').removeClass("sixteen columns").addClass("one-third column")
+        $first_circle.addClass("initial_state");
+        $('.body_middle').show()
+        $('.body_right').show()
+      }, 1000)
+      
       hideAboutMe();
     }
   })
@@ -91,16 +94,19 @@ animateCircle2 = function(){
       $('.third_circle').animate({
         height: "toggle", width: "toggle"}, 1000)
       $( ".second_circle" ).animate({
-        height: "-=170px",
-        width: "-=50%",
-        "border-radius": "+=40%"
+        height: "175px",
+        width: "175px",
+        "border-radius": "50%"
       }, 1000);
       $('.second_circle').children().animate({
         top: "45%"}, 1000)
-      $('.body_middle').removeClass("sixteen columns").addClass("one-third column")
-      $second_circle.addClass("initial_state");
-      $('.body_left').show()
-      $('.body_right').show()
+      setTimeout(function(){
+        $('.body_middle').removeClass("sixteen columns").addClass("one-third column")
+        $second_circle.addClass("initial_state");
+        $('.body_left').show()
+        $('.body_right').show()
+      }, 1000)
+      
       hideProjects();
     }
   })
@@ -128,21 +134,23 @@ animateCircle3 = function(){
       showSkills();
   } else {
       $('#main_heading').css("margin-top", "168px")
+      $( ".third_circle" ).animate({
+        height: "175px",
+        width: "175px",
+        "border-radius": "50%"
+      }, 1000);
       $('.first_circle').animate({
         height: "toggle", width: "toggle"}, 1000)
       $('.second_circle').animate({
         height: "toggle", width: "toggle"}, 1000)
-      $( ".third_circle" ).animate({
-        height: "-=170px",
-        width: "-=50%",
-        "border-radius": "+=40%"
-      }, 1000);
       $('.third_circle').children().animate({
         top: "45%"}, 1000)
-      $('.body_right').removeClass("sixteen columns").addClass("one-third column")
-      $third_circle.addClass("initial_state");
-      $('.body_left').show()
-      $('.body_middle').show()
+      setTimeout(function(){
+        $('.body_right').removeClass("sixteen columns").addClass("one-third column")
+        $third_circle.addClass("initial_state");
+        $('.body_left').show()
+        $('.body_middle').show()
+      }, 1000)
       hideSkills();
     }
   })
