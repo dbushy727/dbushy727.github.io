@@ -81,7 +81,7 @@ body {
 }
 #project_2 {
   display: inline-block;
-  background-color: green;
+  /*background-color: green;*/
   height: 75%;
   width: 45%;
 }
@@ -105,10 +105,10 @@ table, th, td{
   text-align: center;
 }
 #skills {
-  background-color: pink;
+  /*background-color: pink;*/
   display: inline-block;
 }
 #skills_plus {
-  background-color: yellow;
+  /*background-color: yellow;*/
   display: inline-block;
 }
