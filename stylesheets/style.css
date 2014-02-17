@@ -1,11 +1,10 @@
 body {
-  background: url("http://www.idfromdc.com/wp-content/uploads/2013/03/At-the-Office-Mac-Apple-Wallpapers-Creative-Planning-298219.jpg") no-repeat center fixed; 
+  background: url('../images/my_background.png') no-repeat center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   font-size: 18px;
-
 }
 .first_row {
   margin-top: 65px;
