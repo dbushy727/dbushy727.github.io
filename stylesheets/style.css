@@ -69,9 +69,16 @@ body {
 }
 #project_1 {
   display: inline-block;
-  background-color: blue;
   height: 75%;
   width: 45%;
+}
+#project_1 a {
+  position: relative;
+  top: -15px;
+  text-shadow: none;
+}
+#project_1 img {
+  height: 100%;
 }
 #project_2 {
   display: inline-block;
