@@ -1,9 +1,36 @@
+body {
+  background: url("http://www.idfromdc.com/wp-content/uploads/2013/03/At-the-Office-Mac-Apple-Wallpapers-Creative-Planning-298219.jpg") no-repeat center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+nav {
+  background-color: pink;
+  height: 50px;
+}
 .body_left {
-  background-color: green;
-  height: 100px;
+  height: 400px;
+  /*background-color: orange;*/
+}
+
+.body_middle {
+  /*background-color: blue;*/
+  height: 400px;
 }
 
 .body_right {
-  background-color: blue;
-  height: 100px;
+  /*background-color: yellow;*/
+  height: 400px;
+}
+
+.circle_link {
+  height: 175px;
+  width: 175px;
+  border-radius: 50%;
+  background-color: rgba(200,200,200,.6);
+  border: 1px dashed #efefef;
+  margin: 0 auto;
+  margin-top: 40%;
+  box-shadow: 0px 0px 0px slate;
 }
