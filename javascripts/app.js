@@ -1,3 +1,12 @@
+initialize = function(){
+  $('#main_heading').hide();
+  $('#main_heading').fadeIn(5000,"swing", function(){});
+  $('.information').hide();
+  animateCircles($('.first_circle'), $('.second_circle'), $('.third_circle'));
+  animateCircles($('.second_circle'), $('.first_circle'), $('.third_circle'));
+  animateCircles($('.third_circle'), $('.first_circle'), $('.second_circle'));
+}
+
 animateCircles = function($circle1, $circle2, $circle3){
   $circle1.on("click", function(){
     $('.information').show();
@@ -45,10 +54,5 @@ animateCircles = function($circle1, $circle2, $circle3){
 }
 
 $(function(){
-  $('#main_heading').hide();
-  $('#main_heading').fadeIn(5000,"swing", function(){})
-  $('.information').hide();
-  animateCircles($('.first_circle'), $('.second_circle'), $('.third_circle'));
-  animateCircles($('.second_circle'), $('.first_circle'), $('.third_circle'));
-  animateCircles($('.third_circle'), $('.first_circle'), $('.second_circle'));
+  initialize();
 });
