@@ -119,9 +119,12 @@ th {
   line-height: 1.2em;
   text-shadow: 1px 1px 1px black;
 }
-#contact {
+
+#contact, #contact h4 {
   text-align: center;
   font-family: 'Nixie One', cursive;
+  color: ivory;
+  font-weight: bold;
 }
 .circle_tagline {
   position: relative;
@@ -132,29 +135,20 @@ th {
   color: ivory;
   text-shadow: 1px 2px 2px black;
   font-family: 'Nixie One', cursive;
+  margin-bottom: 25px;
 }
 #skills {
-  /*background-color: pink;*/
-  display: inline-block;
-    font-family: 'Nixine One', cursive;
-}
-#skills_plus {
-  /*background-color: yellow;*/
-  display: inline-block;
-}
-.skill_pic {
-  height: 50px;
-  display: block;
-  padding: 5px;
-  margin-left: auto;
-  margin-right: auto
-}
-.skill_group {
-  display: inline-block;
-  margin: 20px;
+  font-family: 'Nixine One', cursive;
 }
 
-.skill_group h3 {
+.skill_group, .skills_group p {
+  display: inline-block;
+  margin: 20px;
+  font-family: 'Nixie One', cursive;
+}
+
+.skill_group h3, .skills_group h3 {
   font-family: 'Nixie One', cursive;
   font-weight: bold;
 }
+
