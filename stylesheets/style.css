@@ -5,6 +5,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
   font-size: 18px;
+  font-family: 'Nixie One', cursive;
 }
 .first_row {
   margin-top: 65px;
@@ -20,6 +21,7 @@ body {
   font-size: 5em;
   text-shadow: 2px 2px 3px black;
   line-height: 100%;
+  /*font-family: 'Nixine One', cursive;*/
 
 }
 .initial_state {
@@ -27,10 +29,14 @@ body {
 }
 #main_heading h4{
   position: relative; 
-  color: rgb(223, 24, 24);
+  /*color: rgb(223, 24, 24);*/
+  color: rgba(200,200,100,.9);
   font-weight: bold;
   margin-right: -3px;
   margin-bottom: -18px;
+  font-family: 'Nixine One', cursive;
+  word-spacing: 1px;
+  letter-spacing: 1px;
 }
 
 .body_left {
@@ -55,7 +61,7 @@ body {
   font-size: 1.3em;
   font-weight: bold;
   color: white;
-  text-shadow: 1px 2px 3px black;
+  /*text-shadow: 1px 2px 3px black;*/
 }
 .circle_link {
   height: 175px;
@@ -67,6 +73,11 @@ body {
   box-shadow: 0px 0px 65px rgb(109, 105, 105);
   margin-bottom: 10px;
 }
+
+.initial_state:hover {
+  background-color: rgba(200,200,100,.3);
+}
+
 #project_1 {
   display: inline-block;
   height: 75%;
@@ -84,32 +95,66 @@ body {
   display: inline-block;
   /*background-color: green;*/
   height: 75%;
-  width: 45%;
+  width: 45%;`
 }
-table, th, td{
-  border: 1px solid black;
-  width: 40%;
-  height: 50%;
+table, th{
+  /*border-bottom: 2px solid black;*/
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 30px;
+  line-height: 2em;
+  font-family: 'Nixie One', cursive;
+
+}
+th {
+  border-bottom: 4px solid black;
+  color: rgb(200,200,100);
 }
 #about_me {
   text-align: left;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  line-height: 90%;
+  margin-top: 25px;
+  line-height: 1.2em;
   text-shadow: 1px 1px 1px black;
 }
 #contact {
   text-align: center;
+  font-family: 'Nixie One', cursive;
 }
-.about_me_tagline {
+.circle_tagline {
+  position: relative;
   text-align: center;
+  top: 40%;
+  font-weight: bold;
+  line-height: 90%;
+  color: ivory;
+  text-shadow: 1px 2px 2px black;
+  font-family: 'Nixie One', cursive;
 }
 #skills {
   /*background-color: pink;*/
   display: inline-block;
+    font-family: 'Nixine One', cursive;
 }
 #skills_plus {
   /*background-color: yellow;*/
   display: inline-block;
+}
+.skill_pic {
+  height: 50px;
+  display: block;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto
+}
+.skill_group {
+  display: inline-block;
+  margin: 20px;
+}
+
+.skill_group h3 {
+  font-family: 'Nixie One', cursive;
+  font-weight: bold;
 }
