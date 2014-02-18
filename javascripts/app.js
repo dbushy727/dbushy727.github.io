@@ -30,7 +30,7 @@ animateCircles = function($circle1, $circle2, $circle3){
         "border-radius": "50%"
       }, 1000);
       $circle1.children().animate({
-        top: "45%"}, 1000)
+        top: "40%"}, 1000)
       setTimeout(function(){
         $circle1.parent().removeClass("sixteen columns").addClass("one-third column")
         $circle1.addClass("initial_state");
@@ -46,8 +46,7 @@ animateCircles = function($circle1, $circle2, $circle3){
 
 $(function(){
   $('#main_heading').hide();
-  $('#main_heading').fadeIn(5000,"swing", function(){
-  })
+  $('#main_heading').fadeIn(5000,"swing", function(){})
   $('.information').hide();
   animateCircles($('.first_circle'), $('.second_circle'), $('.third_circle'));
   animateCircles($('.second_circle'), $('.first_circle'), $('.third_circle'));
