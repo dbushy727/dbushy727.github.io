@@ -1,95 +1,198 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Daniel Bushkanets</title>
-  <script src="javascripts/jquery.js"></script>
-  <script src="javascripts/underscore.js"></script>
-  <script src="javascripts/backbone.js"></script>
-  <script src="javascripts/app.js"></script>
-  <link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="stylesheets/base.css">
-  <link rel="stylesheet" href="stylesheets/layout.css">
-  <link rel="stylesheet" href="stylesheets/skeleton.css">
-  <link rel="stylesheet" href="stylesheets/style.css">
-
+	<title>mock_portfolio</title>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,600italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/carousel.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+	<script src='/javascripts/jquery.js'></script>
+	<script src='/javascripts/app.js'></script>
 </head>
 <body>
-  <div class="container">
-    <div class="first_row">
-      <div class="body_left one-third column">
-        <div class="circle_link first_circle initial_state">
-          <h4 class="circle_tagline">About Me</h4>
-          <div class="information">
-            <div id="about_me">
-              <p><strong>
-                At the age of 24, I am many things. I am a son, a brother, a developer, a musician, a student, a teacher, and many others. On my good days, I'm developing awesome new websites and applications that will change the world. Software development really speaks to me, because it unlocks this infinite world that has no physical limitations, bounds or restrictions, allowing me to create whatever comes to mind.
-              </strong></p>
-              <div id="contact">
-                  <img src="images/github.png" id="github">
-                  <img src="images/twitter-icon.png" id="twitter">
-                  <img src="images/linkedin.png" id="linkedin">
-                  <img src="images/mail-icon.png" id="email">
-              </div>
-            </div>
-          </div>
+  <span id="home"></span>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div> -->
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li><a data-scroll data-speed="1500" data-easing="easeInOutCubic" data-url="false" href="#home">Home</a></li>
+            <li><a data-scroll data-speed="1500" data-easing="easeInOutCubic" data-url="false" href="#about">About Me</a></li>
+            <li><a data-scroll data-speed="1500" data-easing="easeInOutCubic" data-url="false" href="#projects">Projects</a></li>
+            <li><a data-scroll data-speed="1500" data-easing="easeInOutCubic" data-url="false" href="#skills">Skills</a></li>
+          </ul>
         </div>
       </div>
-      <div class="body_middle one-third column">
-        <div class="circle_link second_circle initial_state">
-          <h4 class="circle_tagline">Projects</h4>
-          <div class="information">
-            <div id="project_1">
-              <a href="http://my-mom.herokuapp.com">My-Mom.herokuapp.com</a>
-              <img src="images/mom-com.png">
-            </div>
-            <div id="project_2"></div>
-          </div>
-        </div>
+    </div> 
+    
+  <div id="main">
+<!-- HEADING -->
+      <div class="main_heading">
+        <img src="/images/my_background.png" class="picture_heading"/>
       </div>
-      <div class="body_right one-third column">
-        <div class="circle_link third_circle initial_state">
-          <h4 class="circle_tagline">Skills</h4>
-          <div class="information">
-            <div id="skills">
-              <div class="skills_group">
-                <h3>Languages</h3>
-                <p>Ruby</p>
-                <p>Javascript</p>
-                <p>HTML/CSS3</p>
-                <p>SQL</p>
+      <div class="name_heading">
+
+            <h1 class="name_subheading">Daniel Bushkanets</h1>
+            <h3 class="tagline_subheading">FULL STACK WEB DEVELOPER</h3>
+            
+            
+      </div>
+        
+
+
+        <!-- Marketing messaging and featurettes
+        ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+        <div class="container marketing">
+          <span id="about" class="anchor"></span>
+          <!-- Three columns of text below the carousel -->
+          <div class="row first_pane">
+            <div class="col-lg-4 first_column">
+              <img class="img-circle my_pic" src="/images/me.jpg">
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4 about_me">
+              <h2>About Me</h2>
+              <p>Born and bred in NYC. Most days, I'm developing my craft as a web developer by building awesome websites and applications. In my spare time, I like to write music, watch The Simpsons, and try food from different cultures.</p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4 contact">
+              <h2>Contact</h2>
+              <p>I may be off doing adventerous things, but that doesn't mean you can't contact me!</p>
+              <a href="http://www.github.com/dbushy727">
+                <i class="fa fa-github fa-3x"></i>
+              </a>
+              <a href="http://www.linkedin.com/pub/daniel-bushkanets/46/546/282">
+                <i class="fa fa-linkedin-square fa-3x"></i>
+              </a>
+              <a href="mailto:d.bushkanets@gmail.com">
+                <i class="fa fa-envelope-o fa-3x"></i>
+              </a>
+            </div><!-- /.col-lg-4 -->
+          </div><!-- /.row -->
+        </div>
+        <div class="container-fluid">
+          <ul class="parallax">
+          <!-- START THE FEATURETTES -->
+          <li class="project_li">
+            <span id="projects" class="anchor"></span>
+          <div class="row featurette second_pane parallax-background">
+            <div class="pane inner_pane_2">
+              <div class="col-md-7">
+                <h2 class="featurette-heading">Mom.com  <span class="text-muted mom_tag">Why don't you ever call?</span>
+                  
+                </h2>
+                <br>
+                <p class="lead mom-text">Mom.com is a text-based reminder service that acts as your passive aggressive mother. She will tell you to wear a jacket if it's cold out, stay in bed if your train is running late, and give you some food options when it's lunch time.</p>
               </div>
-              <div class="skill_group">
-                <h3>Web Frameworks</h3>
-                <p>Ruby on Rails</p>
-                <p>Backbone.js</p>
-                <p>Sinatra</p>
-              </div>
-              <div class="skill_group">
-                <h3>Technologies</h3>
-                <p>jQuery</p>
-                <p>AJAX</p>
-                <p>PostgreSQL</p>
-              </div>
-              <div class="skill_group">
-                <h3>Testing</h3>
-                <p>RSpec</p>
-                <p>Capybara</p>
-                <p>Mocha</p>
-              </div>
-              <div class="skill_group">
-                <h3>Others</h3>
-                <p>Git(Hub)</p>
-                <p>Heroku</p>
-                <p>Pivotal Tracker</p>
+
+              <div class="col-md-5">
+                <a href="my-mom.herokuapp.com"><img class="featurette-image img-responsive image_1" src="/images/mom_macbook.png"></a>
               </div>
             </div>
+            
+          </div> 
+          </li>
+    <!-- 
+            <li class="divider">
+              <div class="hr_divider parallax-background">
+              </div>
+            </li> -->
+        
+          <li class="project_li">
+          <div class="row featurette parallax-background third_pane">
+            <div class="pane inner_pane_3">
+                <div class="col-md-5">
+                  <a href="sizeright.herokuapp.com"><img class="featurette-image img-responsive image_2" src="/images/sneakers.png"></a>
+                </div>
+                <div class="col-md-7">
+                  <h2 class="featurette-heading">SizeRight <span class="text-muted sizeright_tag">Where size does matter.</span></h2>
+                  <p class="lead">SizeRight is a shopping tool that takes the guess work out of buying sneakers online. Just plug in your current sneaker info and instantly buy sneakers in your size through Amazon.</p>
+                </div>
+            </div>
           </div>
+        </li>
+        <br>
+
+    <!--       <div class="hr_divider"></div> -->
+          <li id="ending">
+            <span id="skills" class="anchor"></span>
+
+          <div class="row featurette fourth_pane">
+            <div class="pane inner_pane_4">
+                <div class="col-md-10 col-md-offset-1">
+                  <h2 class="featurette-heading">Technologies.</h2>
+                  <br>
+                  <table class="table table-hover">
+                    <thead>
+                      <th>Languages</th>
+                      <th>Web Frameworks</th>
+                      <th>Libraries</th>
+                      <th>Testing</th>
+                      <th>Other</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Ruby</td>
+                        <td>Ruby on Rails</td>
+                        <td>jQuery</td>
+                        <td>RSpec</td>
+                        <td>AJAX</td>
+                      </tr>
+                      <tr>
+                        <td>Javascript</td>
+                        <td>Sinatra</td>
+                        <td>Handlebars.js</td>
+                        <td>Capybara</td>
+                        <td>PostgreSQL</td>
+
+                      </tr>
+                      <tr>
+                        <td>HTML/CSS</td>
+                        <td>Backbone.js</td>
+                        <td>Underscore.js</td>
+                        <td>Mocha</td>
+                        <td>Git(Hub)</td>
+                      </tr>
+                      <tr>
+                        <td>SQL</td>
+                        <td>Bootstrap</td>
+                        <td></td>
+                        <td>D3</td>
+                        <td>Pivotal Tracker</td>
+                        
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>Foundation</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>Skeleton</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+          </div>
+          </li>
         </div>
-      </div>
-      <div id="main_heading" class="sixteen columns">
-      <h4>Full Stack Web Developer</h4>
-      <h1>Daniel Bushkanets</h1>
-    </div>
+        <script src="/javascripts/smooth-scroll.js"></script>
   </div>
 </body>
 </html>
