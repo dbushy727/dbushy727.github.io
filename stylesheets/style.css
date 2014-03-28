@@ -86,7 +86,7 @@ body {
 }
 
 .parallax-background {
-  height: 500px;
+  height: 400px;
   background-size: cover;
 }
 .divider {
@@ -153,27 +153,23 @@ body {
   margin-top: -30px;
 }
 
-.inner_pane_3 {
-  margin-top: 90px;
-}
 .image_2 {
   margin-top: -20px;
 }
 
 .anchor {
   position: relative;
-  top: -40px;
+  /*top: -40px;*/
 }
 #about {
   position: relative;
-  top: -315px;
+  top: -250px;
 }
 #projects {
   z-index: -1;
 }
 #skills {
   position: relative;
-  top: -5px;
 }
 
 .mom_tag {
@@ -188,6 +184,8 @@ table th{
   font-size: 1.4em;
 }
 
-
+.third_pane h2 {
+  margin-top: 55px;
+}
 
 
