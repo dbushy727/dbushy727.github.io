@@ -16,7 +16,7 @@ function showSideNav() {
 
 }
 function sideNavHover() {
-  $('.fa-male, .fa-wrench, .fa-code, .fa-envelope').on("mouseover", function(e) {
+  $('.side_nav a').on("mouseover", function(e) {
     console.log("hover");
     $(this).siblings('.nav_name').animate({
       opacity: "1"
@@ -28,7 +28,24 @@ function sideNavHover() {
     }, 100);
   });
 }
+
+function smoothScroll() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    console.log("clicked");
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+}
 $(function(){
   showSideNav();
   sideNavHover();
+  smoothScroll();
 });
