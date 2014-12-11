@@ -6,16 +6,26 @@ function showSideNav() {
         console.log($(v));
         $($('.nav_box')[i]).fadeIn();
       }, counter);
-      counter += 300;
+      counter += 500;
     });
   }, 500);
+
+  setTimeout(function() {
+    $('.nav_name').animate({"opacity": "0"});
+  }, 2700);
+
 }
 function sideNavHover() {
-  $('.nav_box').on("mouseover", function(e) {
-    $(this).children('.nav_name').fadeIn();
+  $('.fa-male, .fa-wrench, .fa-code, .fa-envelope').on("mouseover", function(e) {
+    console.log("hover");
+    $(this).siblings('.nav_name').animate({
+      opacity: "1"
+    }, 100);
   });
   $('.nav_box').on("mouseleave", function(e) {
-    $(this).children('.nav_name').fadeOut();
+    $(this).children('.nav_name').animate({
+      opacity: "0"
+    }, 100);
   });
 }
 $(function(){

@@ -14,13 +14,11 @@ body {
   z-index: 1;
 }
 .nav_box {
-  height: 3em;
-  width: 3em;
-  background-color: white;
-  border: 2px solid #333;
-  clear: both;
-  margin: 6em auto;
+  margin: 2em 1em;
   position: relative;
+  font-size: 3em;
+  width: 4em;
+  text-align: left;
   display: none;
 }
 .nav_box_1 {
@@ -49,13 +47,18 @@ body {
     left: -25px;
   }
   .nav_name {
+    font-size: 16px;
     position: relative;
-    left: 45px;
-    width: 8em;
-    z-index: 1;
-    top: -1em;
+    vertical-align: middle;
+    display: inline-block;
     color: rgb(237, 237, 237);
-    display: none;
+    margin-left: 10px;
+  }
+  .fa-male {
+    font-size: 1.4em;
+  }
+  .fa-wrench {
+    font-size: 1.15em;
   }
 
 .right {
