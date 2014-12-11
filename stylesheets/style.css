@@ -110,6 +110,9 @@ body {
       .performance {
         -webkit-animation-delay: 1s;
       }
+        .performance .circle_title {
+          top: 0.5em;
+        }
 .middle {
   background-color: rgb(30,30,30);
   height: 100%;
