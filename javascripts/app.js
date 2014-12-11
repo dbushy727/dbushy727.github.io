@@ -44,8 +44,19 @@ function smoothScroll() {
       }
     });
 }
+
+function windowResize() {
+  var window_height = $(window).height();
+  $('.pane').css({"height": window_height}, 500);
+
+  $(window).on("resize", function(e) {
+    var window_height = $(window).height();
+    $('.pane').animate({"height": window_height}, 500);
+  });
+}
 $(function(){
   showSideNav();
   sideNavHover();
   smoothScroll();
+  windowResize();
 });
