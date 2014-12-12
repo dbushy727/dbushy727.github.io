@@ -10,30 +10,33 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/stylesheets/animate.min.css">
-	<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css"/>	
   <link rel="stylesheet" type="text/css" href="stylesheets/style.css"/>
 </head>
 <body>
   <div class="main_container">  
-    <div class="splash pane">
-      <div class="side_nav">
-        <div class="nav_box">
-          <a href="#biography"><i class="fa fa-male"></i></a>
-          <div class="nav_name">Biography</div>
-        </div>
-        <div class="nav_box">
-          <a href="#projects"><i class="fa fa-wrench"></i></a>
-          <div class="nav_name">Projects</div>
-        </div>
-        <div class="nav_box">
-          <a href="#skills"><i class="fa fa-code"></i></a>
-          <div class="nav_name">Skills</div>
-        </div>
-        <div class="nav_box">
-          <a href="#contact"><i class="fa fa-envelope"></i></a>
-          <div class="nav_name">Contact</div>
-        </div>
+    <div class="side_nav">
+      <div class="nav_box">
+        <a href="#splash"><i class="fa fa-home"></i></a>
+        <div class="nav_name">Home</div>
       </div>
+      <div class="nav_box">
+        <a href="#biography"><i class="fa fa-male"></i></a>
+        <div class="nav_name">Biography</div>
+      </div>
+      <div class="nav_box">
+        <a href="#projects"><i class="fa fa-wrench"></i></a>
+        <div class="nav_name">Projects</div>
+      </div>
+      <div class="nav_box">
+        <a href="#skills"><i class="fa fa-code"></i></a>
+        <div class="nav_name">Skills</div>
+      </div>
+      <div class="nav_box">
+        <a href="#contact"><i class="fa fa-envelope"></i></a>
+        <div class="nav_name">Contact</div>
+      </div>
+    </div>
+    <div id="splash" class="splash pane">
       <div class="middle">
         <div class="name animated fadeInDownBig">Daniel Bushkanets</div>
         <div class="tagline animated bounceInUp">
@@ -64,10 +67,76 @@
         </div>
       </div>
     </div>
-    <div class="section_1 pane" id="biography"></div>
-    <div class="section_2 pane" id="projects"></div>
-    <div class="section_3 pane" id="skills"></div>
-    <div class="section_4 pane" id="contact"></div>
+    <div class="section_1 pane section" id="biography">
+      <h1 class="headline">Biography</h1>
+      <div class="content_container">
+        <div class="learn_to_code paragraph">
+          <img class="bio_icon" src="/images/man216.svg">
+          <div class="tagline">Roots</div>
+          <div>
+            I first started learning code when I joined the hacker bootcamp, General Assembly. I spent anywhere between 10-14 hours a day melting my brain with Ruby, SQL, Javascript, etc., all the while downing massive quantities of coffee and cereal bars. 
+          </div>
+          <br>
+          <div>
+            Then, I developed the thirst <span class="mini">(not coffee)</span>. The thirst for more. <span class="mini">(definitely not more coffee)</span> Since then, I have been non-stop coding. Refactoring old techniques to follow best practices and conventions as well as mastering new abilities.
+          </div>
+          <br>
+          <div>A <span class="bold">passion</span> had been born.</div>
+        </div>
+        <div class="musical_interests paragraph">
+          <img class="bio_icon" src="/images/headphone14.svg">
+          <div class="tagline">Music</div>
+          <div>
+            Music has always played a big role in my life. It started when I was fourteen and got my hands on a music program called Fruity Loops. Since then, I have been learning different musical instruments like the Guitar and Bass Guitar, writing music, fine-tuning recordings and picking up different skills along the way.
+          </div>
+          <br>
+          <div>
+            It was only fitting that after I learned to code, I landed a Full Stack Applications Developer role at the nations leader in Mechanical Licensing and Rights Management, The Harry Fox Agency (HFA). 
+          </div>
+        </div>
+        <div class="experience paragraph">
+          <img class="bio_icon" src="/images/businessman120.svg">
+          <div class="tagline">Experience</div>
+          <div>
+            Working at HFA, I have been fortunate enough to be at a company that is going through a technology overhaul. Due to the natural state of an evolving company, I get to design, build and implement tons of applications.
+          </div>
+          <br>
+          <div>
+            I primarily work in a LAMP Stack (Linux-Apache-MySQL-PHP) environment with Code Igniter on Amazon Web Services (AWS) running Ubuntu/CentOS. We deal with a lot of data processing, and I also get to explore different Javascript libraries such as D3.js for various needs.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section_2 pane section" id="projects">
+      <h1 class="headline">Projects</h1>
+      <div class="projects_container">
+        <div class="project project_1"></div>
+        <div class="project project_2"></div>
+        <div class="project project_3"></div>
+        <div class="project project_4"></div>
+        <div class="project project_5"></div>
+        <div class="project project_6"></div>
+        <div class="project project_7"></div>
+      </div>
+    </div>
+    <div class="section_3 pane section" id="skills">
+      <h1 class="headline">Skills</h1>
+    </div>
+    <div class="section_4 pane section" id="contact">
+      <h1 class="headline">Say Hello!</h1>
+      <div class="contact_form">
+        <div>
+          <input type="text" class="contact_input" placeholder="Name" name="name">
+          <input type="text" class="contact_input" placeholder="Subject" name="subject">
+        </div>
+        <div>
+          <textarea name="body" class="contact_body" cols="47.5" rows="5" placeholder="Message"></textarea>
+        </div>
+        <div>
+          <button id="submit_contact">Send Message</button>
+        </div>
+      </div>
+    </div>
   </div>
   <footer class="container">
     

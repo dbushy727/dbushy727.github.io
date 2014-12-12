@@ -2,11 +2,23 @@
 body {
   font-size: 14px;
   font-family: "Helvetica Neue";
+  color: #333;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+
 }
 a, a:hover, a:focus, a:visited {
   color: inherit;
 }
-
+::selection {
+  background: #fff; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #fff; /* Gecko Browsers */
+}
 /*End Global*/
 
 /*Splash*/
@@ -25,7 +37,7 @@ a, a:hover, a:focus, a:visited {
     cursor: pointer;
   }
 .nav_box {
-  margin: 2em 1em;
+  margin: 1.5em 1em;
   position: relative;
   font-size: 3em;
   width: 4em;
@@ -72,15 +84,21 @@ a, a:hover, a:focus, a:visited {
   .fa-wrench {
     font-size: 1.15em;
   }
+  .fa-home {
+    font-size: 1.3em;
+    margin-left: -8px;
+  }
 
 .right {
   background-color: blue;
   height: 100%;
-  display: inline-block;
+  display: flex;
   width: 25%;
   float: left;
   position: relative;
-  left: 10%;
+  left: 15%;
+  flex-direction: column;
+  align-items: stretch;
 }
   .right_box_1 {
     background-color: #E8D578;
@@ -95,25 +113,28 @@ a, a:hover, a:focus, a:visited {
     position: relative;
   }
   .splash_box {
-    height: 33.3333%;
+    /* height: 33.3333%; */
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin: 0 auto; */
   }
     .web, .data, .performance {
-      height: 14em;
-      width: 14em;
+
       border-radius: 50%;
       background-color: rgb(30,30,30);
-      margin: 0 auto;
-      position: relative;
-      top: 6%;
-      border: 5px solid rgb(30,30,30);
       color: white;
       font-weight: 100;
+      flex-basis: 0;
+      flex: 0 1 auto;
+      margin: 0 auto;
     }
       .circle_title {
         position: absolute;
         font-size: 1.5em;
         top: 0.3em;
-        width: 9em;
+        width: 100%;
         text-align: center;
       }
       .circle {
@@ -132,9 +153,9 @@ a, a:hover, a:focus, a:visited {
   background-color: rgb(30,30,30);
   height: 100%;
   display: inline-block;
-  width: 65%;
+  width: 60%;
   float: left;
-  left: 10%;
+  left: 15%;
   position: relative;
 }
   .name, .tagline, .problem_solver {
@@ -163,17 +184,179 @@ a, a:hover, a:focus, a:visited {
 /*End Splash*/
 
 /*Section 1*/
+.section {
+  width: 85%;
+  position: relative;
+  left: 15%;
+}
+  .headline {
+    font-size: 4.5em;
+    padding: 0.5em;
+    font-weight: 700;
+  }
+  .paragraph {
+    font-size: 1.2em;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    padding: 1em;
+    line-height: 1.5em;
+  }
+    .paragraph .tagline {
+      text-align: left;
+      color: #eee;
+      font-weight: 500;
+      margin-bottom: 0.5em;
+    }
+
+
+  .bio_icon {
+    text-align: center;
+    width: 3em;
+    height: 4em;
+    display: block;
+    margin: 0 auto 1em;
+    color: white;
+  }
+
 .section_1 {
   background-color: #ddd;
 }
-.section_2 {
-  background-color: #ccc;
+.content_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
 }
+  .mini {
+    font-size: 0.6em;
+    font-weight: 700;
+  }
+  .bold, .huge {
+    font-weight: 700;
+  }
+  .huge  {
+    font-size: 3em;
+  }
+  .learn_to_code {
+    background-color: rgba(43, 165, 255,0.6);
+    flex-basis: 150em;
+  }
+  .musical_interests {
+    background-color: rgba(43, 165, 255,0.6);
+
+  }
+  .experience {
+    background-color: rgba(43, 165, 255,0.6);
+    flex-basis: 120em;
+  }
+    .experience_list {
+      margin-left: 3em;
+      font-size: 0.5em;
+      list-style-type: inherit;
+    }
+.section_2 {
+  background-color: #999;
+}
+  .section_2 .headline {
+    text-align: right;
+  }
 .section_3 {
   background-color: #777;
 }
+/*End Section 1*/
+.projects_container {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+}
+.project {
+  font-size: 16px;
+  flex: 1 auto;
+  align-self: baseline;
+}
+.project_1 {
+  background-color: green;
+  height: 20em;
+  width: 20em;
+}
+.project_2 {
+  background-color: yellow;
+  height: 20em;
+  width: 10em;
+}
+.project_3 {
+  background-color: orange;
+  height: 10em;
+  width: 10em;
+  vertical-align: top;
+}
+.project_4 {
+  background-color: blue;
+  height: 10em;
+  width: 10em;
+}
+.project_5 {
+  background-color: cyan;
+  height: 10em;
+  width: 10em;
+}
+.project_6 {
+  background-color: red;
+  height: 10em;
+  width: 18.5em;
+}
+.project_7 {
+  background-color: pink;
+  height: 10em;
+  width: 20em;
+}
+/*Section 2*/
+
+/*End Section 2*/
+
+/*Section 3*/
+/*End Section 3*/
+
+/*Section 4*/
 .section_4 {
   background-color: #333;
 }
+.section_4 .headline {
+  background-color: #ddd;
+  text-align: center;
+}
+.contact_form {
+  text-align: center;
+}
+.contact_input {
+  padding: 0.3em;
+  margin-top: 2em;
+  border-radius: 10px;
+  border: 0;
+  font-size: 2em;
+  font-weight: 100;
+  font-family: Helvetica Neue;
+}
+.contact_body {
+  border-radius: 10px;
+  margin-top: 1em;
+  border: 0;
+  font-size: 2em;
+  font-weight: 100;
+  font-family: Helvetica Neue;
+  padding: 10px;
+}
 
-/*End Section 1*/
+#submit_contact {
+  border: 5px solid #eee;
+  padding: 1em 2em;
+  background-color: #333;
+  color: #eee;
+  border-radius: 5px;
+  font-family: Helvetica Neue;
+  font-weight: 100;
+  font-size: 2em;
+  margin-top: 1em;
+  box-shadow: 1px 2px 3px black;
+}
+/*End Section 4*/

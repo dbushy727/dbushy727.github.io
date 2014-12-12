@@ -13,8 +13,8 @@ function showSideNav() {
   setTimeout(function() {
     $('.nav_name').animate({"opacity": "0"});
   }, 2700);
-
 }
+
 function sideNavHover() {
   $('.side_nav a').on("mouseover", function(e) {
     console.log("hover");
@@ -47,11 +47,11 @@ function smoothScroll() {
 
 function windowResize() {
   var window_height = $(window).height();
-  $('.pane').css({"height": window_height}, 500);
+  $('.pane').css({"height": window_height});
 
   $(window).on("resize", function(e) {
     var window_height = $(window).height();
-    $('.pane').animate({"height": window_height}, 500);
+    $('.pane').animate({"height": window_height}, "fast");
   });
 }
 $(function(){
