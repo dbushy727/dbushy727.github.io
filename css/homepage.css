@@ -1,5 +1,6 @@
 header {
-    background-image: url(../img/new-york-manhattan.jpg);
+    background: url(../img/new-york-manhattan.jpg) fixed;
+    background-size: cover;
 }
 
 .splash_cover {
@@ -54,7 +55,7 @@ header {
     background: url("../img/web_design.jpg") fixed top center;
 }
 .divider_2 {
-    background: url("../img/lake.jpg") fixed top center;
+    background: url("../img/code.jpg") fixed top center;
 }
 
 .divider {
