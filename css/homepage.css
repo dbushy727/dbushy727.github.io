@@ -2,6 +2,10 @@ header {
     background-image: url(../img/city.jpg);
 }
 
+.splash_cover {
+    background-color: rgba(40, 40, 40, 0.7);
+}
+
 .navbar-default {
     background-color: transparent;
 }
