@@ -59,10 +59,17 @@ header {
 
 
 .divider.divider_1 {
-    background: url("../img/web_design.jpg") fixed top center;
+    background: url("../img/web_design.jpg") fixed bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -20em;
+}
+
+@media (max-width: 500px) {
+    .divider.divider_1 {
+        background: url("../img/web_design.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 .divider.divider_2 {
     height: 15em;
