@@ -181,3 +181,7 @@ section#contact {
 #team {
     background-color: #222;
 }
+
+.help-block ul li {
+    list-style: none;
+}
