@@ -151,11 +151,16 @@ function renderSkills(height, width, skills) {
       .attr("width", width)
       .attr("height", height);
 
-  svg.selectAll("circle")
-      .data(nodes.slice(1))
-    .enter().append("circle")
-      .attr("r", function(d) { return d.radius; })
-      .style("fill", function(d, i) { 
+  var bubble = svg.selectAll("g")
+    .data(nodes.slice(1))
+    .enter().append("g")
+    .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")";});
+
+
+  bubble.append("circle")
+    .attr("r", function(d) { return d.radius; })
+    .attr("class", "skill_circle")
+    .style("fill", function(d, i) { 
         if (d.skill.category == "language") {
           return "#ff7f0e";
         } else if (d.skill.category == "framework") {
@@ -171,11 +176,11 @@ function renderSkills(height, width, skills) {
         }
       });
 
-  svg.selectAll("text")
-      .data(nodes.slice(1))
-    .enter().append("text")
-      .attr("stroke", "black")
-      .text(function(d) { return d.skill.name });
+  bubble.append("text")
+    .attr("dy", ".3em")
+    .attr("class", "skill_text")
+    .style("text-anchor", "middle")
+    .text(function(d) { return d.skill.name });
 
   force.on("tick", function(e) {
     var q = d3.geom.quadtree(nodes),
@@ -184,22 +189,8 @@ function renderSkills(height, width, skills) {
 
     while (++i < n) q.visit(collide(nodes[i]));
 
-    svg.selectAll("circle")
-        .attr("cx", function(d) { return d.x; })
-        .attr("cy", function(d) { return d.y; })
-        .attr("class", "skill_circle");
-
-    svg.selectAll("text")
-      .attr("x", function (d) { 
-        var left_bound = d.x - d.skill.radius;
-        var word_width = $(this).width();
-        var total_width = d.skill.radius * 2;
-        var center = left_bound + ((total_width - word_width) / 2);
-        return center;
-      })
-      .attr("y", function (d) {return d.y; })
-      .attr("stroke", "#000")
-      .attr("class", "skill_text");
+    svg.selectAll("g")
+        .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")";});
   });
 
   svg.on("mousemove", function() {

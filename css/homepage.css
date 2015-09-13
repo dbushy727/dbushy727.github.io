@@ -11,9 +11,12 @@ header {
     background-color: transparent;
 }
 
+.text-white {
+    color: #fff;
+}
 .skill_text {
     font-size: 0.6em;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 1px;
 }
 
@@ -55,11 +58,49 @@ header {
 }
 
 
-.divider_1 {
+.divider.divider_1 {
     background: url("../img/web_design.jpg") fixed top center;
 }
-.divider_2 {
+.divider.divider_2 {
+    /*background: url("../img/code.jpg") fixed top center;*/
+    height: 15em;
+    background-color: #2DCA95;
+    color: #fff;
+    position: relative;
+}
+
+section#contact {
     background: url("../img/code.jpg") fixed top center;
+}
+
+.quote_box {
+    position: absolute;
+    top: 20%;
+}
+.quote {
+    text-transform: none;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 100;
+    letter-spacing: 0.6px;
+}
+@media (max-width: 1000px) {
+    .quote {
+        font-size: 1.3em;
+    }
+    .quote_box {
+        top: 25%;
+    }
+}
+@media (max-width: 500px) {
+    .quote_box {
+        top: 15%;
+    }
+}
+.quote_author {
+    position: relative;
+    font-weight: 700;
 }
 
 .divider {
@@ -112,4 +153,8 @@ header {
 .big_button {
     font-size: 20px;
     padding: 24px 48px;
+}
+
+#team {
+    background-color: #222;
 }
