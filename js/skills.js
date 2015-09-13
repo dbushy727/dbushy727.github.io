@@ -103,13 +103,39 @@ skills = [
       "name":"AWS",
       "category": "misc",
       "radius": 33
+    },
+    {
+      "name": "Git",
+      "category": "misc",
+      "radius": 33
+    },
+    {
+      "name": "Vagrant",
+      "category": "misc",
+      "radius": 33
+    },
+    {
+      "name": "OAuth 2.0",
+      "category": "misc",
+      "radius": 33
+    },
+    {
+      "name": "API's",
+      "category": "misc",
+      "radius": 33
     }
   ];
 
 function renderSkills(height, width, skills) {
-  var nodes = d3.range(skills.length).map(function(i) { return {radius: skills[i].radius, skill: skills[i]}; }),
-      root = nodes[0],
-      color = d3.scale.category10();
+  var nodes = d3.range(skills.length)
+    .map(function(i) { 
+        return {
+            radius: skills[i].radius, 
+            skill: skills[i]
+        }; 
+    }),
+    root = nodes[0],
+    color = d3.scale.category10();
   root.radius = 0;
   root.fixed = true;
 
@@ -160,10 +186,17 @@ function renderSkills(height, width, skills) {
 
     svg.selectAll("circle")
         .attr("cx", function(d) { return d.x; })
-        .attr("cy", function(d) { return d.y; });
+        .attr("cy", function(d) { return d.y; })
+        .attr("class", "skill_circle");
 
     svg.selectAll("text")
-      .attr("x", function (d) {return d.x - (d.skill.name.length * 2.5);  })
+      .attr("x", function (d) { 
+        var left_bound = d.x - d.skill.radius;
+        var word_width = $(this).width();
+        var total_width = d.skill.radius * 2;
+        var center = left_bound + ((total_width - word_width) / 2);
+        return center;
+      })
       .attr("y", function (d) {return d.y; })
       .attr("stroke", "#000")
       .attr("class", "skill_text");
