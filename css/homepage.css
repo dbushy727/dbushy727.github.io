@@ -72,6 +72,8 @@ header {
 
 section#contact {
     background: url("../img/code.jpg") fixed top center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .quote_box {
