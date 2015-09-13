@@ -60,9 +60,10 @@ header {
 
 .divider.divider_1 {
     background: url("../img/web_design.jpg") fixed top center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .divider.divider_2 {
-    /*background: url("../img/code.jpg") fixed top center;*/
     height: 15em;
     background-color: #2DCA95;
     color: #fff;
