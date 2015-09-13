@@ -59,7 +59,7 @@ header {
 
 
 .divider.divider_1 {
-    background: url("../img/web_design.jpg") top center;
+    background: url("../img/web_design.jpg") fixed top center;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -20em;
