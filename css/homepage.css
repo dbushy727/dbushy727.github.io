@@ -64,11 +64,13 @@ header {
     background-size: cover;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 668px) {
     .divider.divider_1 {
         background: url("../img/web_design.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+        -ms-background-position-y: -3em;
+        background-position-y: -3em;
     }
 }
 .divider.divider_2 {
