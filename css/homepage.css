@@ -97,7 +97,17 @@ section#contact {
     font-style: italic;
     font-weight: 100;
     letter-spacing: 0.6px;
+    quotes: "\201C""\201D""\2018""\2019";
 }
+.quote:before {
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+  font-family: arial;
+}
+
 @media (max-width: 1000px) {
     .quote {
         font-size: 1.2em;
