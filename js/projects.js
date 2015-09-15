@@ -137,12 +137,13 @@ function replaceModalData() {
         $('#modal_image_3').attr("src", project.image_3);
         $('#modal_description').html(project.description);
         $('#modal_languages li').remove();
-        
+
         $(project.languages).each(function(i,v) {
             $('#modal_languages').append("<li class=\"list-group-item\">"+v+"</li>");
         });
 
         if (project.public == "Y") {
+            $('#modal_view_project').attr("href", project.link)
             $('#modal_view_project').show();
             $('#modal_not_available').hide();
         } else {
