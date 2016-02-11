@@ -22,7 +22,7 @@ var projects = {
         "image_1": "http://res.cloudinary.com/dpjzmn026/image/upload/v1445482587/workout_screen_computer_xdhpjn.png",
         "image_2": "http://res.cloudinary.com/dpjzmn026/image/upload/v1445482586/history_i1lt5i.png",
         "image_3": "http://res.cloudinary.com/dpjzmn026/image/upload/v1445482586/performance_mpik3u.png",
-        "description": "<p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>",
+        "description": "<p>Defined is a fitness application that eliminates the need for bringing a notebook to the gym. Defined allows you to create exercises and pair them with workouts. Once you hit the gym, you can log back in and start recording your progress. Defined will keep track of all your workouts and give you detailed reporting on your progress with fancy graphs and heatmaps.</p>",
         "languages": [
             "Ruby",
             "JS",
@@ -36,7 +36,7 @@ var projects = {
             "Foundation"
         ],
         "public": "Y",
-        "link": "http://defined.herokuapp.com" 
+        "link": "http://defined.herokuapp.com"
     },
     "gh_discovery": {
         "title": "Github Discovery",
@@ -65,7 +65,7 @@ var projects = {
         "image_1": "http://res.cloudinary.com/dpjzmn026/image/upload/v1445482717/mom_computer_edgfzy.png",
         "image_2": "http://res.cloudinary.com/dpjzmn026/image/upload/v1445482716/eat_jwjuvi.png",
         "image_3": "http://res.cloudinary.com/dpjzmn026/image/upload/v1445482717/weather_fbjoop.png",
-        "description": "<p>Mom is a reminder service that acts as your personal virtual mom. When you sign up for Mom, you will receive text message reminders for everyday important items that mom can't help but remind you about.</p> <p>Every morning, Mom will deliver the day's weather report as well as your local train status. Mom will also text you some lunch recommendations at noon based on your registered location.</p> <p>Mom uses the Yelp API for food, Weather API for weather, scrapes MTA open data for train status, and uses the Twilio API to send texts.</p>", 
+        "description": "<p>Mom is a reminder service that acts as your personal virtual mom. When you sign up for Mom, you will receive text message reminders for everyday important items that mom can't help but remind you about.</p> <p>Every morning, Mom will deliver the day's weather report as well as your local train status. Mom will also text you some lunch recommendations at noon based on your registered location.</p> <p>Mom uses the Yelp API for food, Weather API for weather, scrapes MTA open data for train status, and uses the Twilio API to send texts.</p>",
         "languages": [
             "Ruby",
             "JS",
