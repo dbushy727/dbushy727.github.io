@@ -120,6 +120,23 @@ var projects = {
             "Bootstrap"
         ],
         "public": "N"
+    },
+    "voyent": {
+        "title": "Voyent, Inc.",
+        "subtitle": "Cloud Consultants",
+        "image_1": "http://res.cloudinary.com/ddkidb6ap/image/upload/v1461204755/voyent_computer_e98eot.png",
+        "image_2": "http://res.cloudinary.com/ddkidb6ap/image/upload/v1461203535/Screen_Shot_2016-04-20_at_9.40.19_PM_g2mtnc.png",
+        "image_3": "http://res.cloudinary.com/ddkidb6ap/image/upload/v1461203536/Screen_Shot_2016-04-20_at_9.40.27_PM_vo92uv.png",
+        "description": "<p><a href='http://www.voyent.io'>Voyent, Inc.</a> is a technology consulting firm dedicated to migrating businesses to the cloud as well as scaling existing cloud-based systems. Tasked with creating a modern informational website that highlights their competitive advantage as well as their passion for technology.</p>",
+        "languages": [
+            "HTML",
+            "JS",
+            "SASS",
+            "jQuery",
+            "Skel"
+        ],
+        "public": "Y",
+        "link": "http://www.voyent.io"
     }
 };
 
