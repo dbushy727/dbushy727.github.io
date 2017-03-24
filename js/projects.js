@@ -137,6 +137,26 @@ var projects = {
         ],
         "public": "Y",
         "link": "http://www.voyent.io"
+    },
+    "devops": {
+        "title": "DevOps Jobs",
+        "subtitle": "A curated list of DevOps job opportunities",
+        "image_1": "http://res.cloudinary.com/ddkidb6ap/image/upload/v1461204755/voyent_computer_e98eot.png",
+        "image_2": "http://res.cloudinary.com/ddkidb6ap/image/upload/v1461203535/Screen_Shot_2016-04-20_at_9.40.19_PM_g2mtnc.png",
+        "image_3": "http://res.cloudinary.com/ddkidb6ap/image/upload/v1461203536/Screen_Shot_2016-04-20_at_9.40.27_PM_vo92uv.png",
+        "description": "<p><a href='https://devops.jobs'>DevOps Jobs</a> is a jobs website for connecting companies with talented DevOps professionals. Too many job boards are filled with unrelated posts written by people who don't know the role of a DevOps engineer. DevOps Jobs curates the listing to ensure only high quality jobs make it to the list.</p>",
+        "languages": [
+            "PHP",
+            "JS",
+            "HTML",
+            "SASS",
+            "Laravel 5"
+            "jQuery",
+            "Bootstrap",
+            "Stripe"
+        ],
+        "public": "Y",
+        "link": "https://devops.jobs"
     }
 };
 
