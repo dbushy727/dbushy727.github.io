@@ -14,7 +14,7 @@ var projects = {
             "jQuery"
         ],
         "public": "Y",
-        "link": "http://dbushy727.github.io/bagelworks/theme/homepage.html"
+        "link": "http://dbushy727.github.io/bagelworks/index.html"
     },
     "defined": {
         "title": "Defined",
