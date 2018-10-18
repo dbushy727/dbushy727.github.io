@@ -1,4 +1,41 @@
-skills = [{"name":"Mouse", "radius": 50 }, {"name":"Ruby", "category": "language", "radius": 35 }, {"name":"PHP", "category": "language", "radius": 35 }, {"name":"HTML", "category": "language", "radius": 35 }, {"name":"CSS", "category": "language", "radius": 35 }, {"name":"SQL", "category": "db", "radius": 35 }, {"name":"JavaScript", "category": "language", "radius": 35 }, {"name":"jQuery", "category": "library", "radius": 35 }, {"name":"Angular", "category": "framework", "radius": 35 }, {"name":"Laravel", "category": "framework", "radius": 35 }, {"name":"Rails", "category": "framework", "radius": 35 }, {"name":"MySQL", "category": "db", "radius": 35 }, {"name":"Postgres", "category": "db", "radius": 35 }, {"name":"Backbone", "category": "framework", "radius": 35 }, {"name":"Bootstrap", "category": "framework", "radius": 35 }, {"name":"CodeIgniter", "category": "framework", "radius": 35 }, {"name":"Skeleton", "category": "framework", "radius": 35 }, {"name":"D3.js", "category": "library", "radius": 35 }, {"name":"Underscore", "category": "library", "radius": 35 }, {"name":"OSX", "category": "os", "radius": 35 }, {"name":"CentOS", "category": "os", "radius": 35 }, {"name":"Ubuntu", "category": "os", "radius": 35 }, {"name":"AWS", "category": "misc", "radius": 35 }, {"name": "Git", "category": "misc", "radius": 35 }, {"name": "Vagrant", "category": "misc", "radius": 35 }, {"name": "OAuth 2.0", "category": "misc", "radius": 35 }, {"name": "API's", "category": "misc", "radius": 35 }, {"name": "Apache", "category": "misc", "radius": 35 }, {"name": "Nginx", "category": "misc", "radius": 35 }, {"name": "Elasticsearch", "category": "db", "radius": 35 }, {"name": "Jenkins", "category": "misc", "radius": 35 } ];
+skills = [
+  {"name":"Mouse", "radius": 50 },
+  {"name":"Ruby", "category": "language", "radius": 35 },
+  {"name":"PHP", "category": "language", "radius": 35 },
+  {"name":"JavaScript", "category": "language", "radius": 35 },
+  {"name":"HTML", "category": "language", "radius": 35 },
+  {"name":"CSS", "category": "language", "radius": 35 },
+  {"name":"SQL", "category": "language", "radius": 35 },
+  {"name":"MySQL", "category": "db", "radius": 35 },
+  {"name":"Postgres", "category": "db", "radius": 35 },
+  {"name": "Elasticsearch", "category": "db", "radius": 35 },
+  {"name": "Redis", "category": "db", "radius": 35 },
+  {"name":"jQuery", "category": "library", "radius": 35 },
+  {"name":"D3.js", "category": "library", "radius": 35 },
+  {"name":"Angular", "category": "framework", "radius": 35 },
+  {"name":"Laravel", "category": "framework", "radius": 35 },
+  {"name":"Rails", "category": "framework", "radius": 35 },
+  {"name":"Backbone", "category": "framework", "radius": 35 },
+  {"name":"Bootstrap", "category": "framework", "radius": 35 },
+  {"name":"CodeIgniter", "category": "framework", "radius": 35 },
+  {"name":"Skeleton", "category": "framework", "radius": 35 },
+  {"name":"Underscore", "category": "library", "radius": 35 },
+  {"name":"Lodash", "category": "library", "radius": 35 },
+  {"name":"OSX", "category": "os", "radius": 35 },
+  {"name":"CentOS", "category": "os", "radius": 35 },
+  {"name":"Ubuntu", "category": "os", "radius": 35 },
+  {"name":"AWS", "category": "misc", "radius": 35 },
+  {"name": "Git", "category": "misc", "radius": 35 },
+  {"name": "Vagrant", "category": "misc", "radius": 35 },
+  {"name": "OAuth 2.0", "category": "misc", "radius": 35 },
+  {"name": "Apache", "category": "misc", "radius": 35 },
+  {"name": "Nginx", "category": "misc", "radius": 35 },
+  {"name": "Jenkins", "category": "misc", "radius": 35 },
+  {"name": "Composer", "category": "misc", "radius": 35 },
+  {"name": "PHPUnit", "category": "misc", "radius": 35 },
+  {"name": "Mocha/Chai", "category": "misc", "radius": 35 },
+];
+
 function renderSkills(height, width, skills) {
   var nodes = d3.range(skills.length)
     .map(function(i) {
