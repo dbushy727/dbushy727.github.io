@@ -1,5 +1,5 @@
 header {
-    background: url("http://res.cloudinary.com/dpjzmn026/image/upload/v1445481688/new-york-manhattan_vsutqy.jpg");
+    background: url("https://res.cloudinary.com/dpjzmn026/image/upload/v1445481688/new-york-manhattan_vsutqy.jpg");
     background-size: cover;
 }
 
@@ -20,7 +20,7 @@ header {
     letter-spacing: 1px;
 }
 
-.orange_skill { 
+.orange_skill {
     color: #ff7f0e;
 }
 
@@ -59,14 +59,14 @@ header {
 
 
 .divider.divider_1 {
-    background: url("http://res.cloudinary.com/dpjzmn026/image/upload/v1445481686/web_design_sc2xa4.jpg") fixed bottom;
+    background: url("https://res.cloudinary.com/dpjzmn026/image/upload/v1445481686/web_design_sc2xa4.jpg") fixed bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 @media (max-width: 668px) {
     .divider.divider_1 {
-        background: url("http://res.cloudinary.com/dpjzmn026/image/upload/v1445481686/web_design_sc2xa4.jpg");
+        background: url("https://res.cloudinary.com/dpjzmn026/image/upload/v1445481686/web_design_sc2xa4.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         -ms-background-position-y: -3em;
@@ -81,7 +81,7 @@ header {
 }
 
 section#contact {
-    background: url("http://res.cloudinary.com/dpjzmn026/image/upload/v1445481684/code_ogmfxw.jpg") fixed top center;
+    background: url("https://res.cloudinary.com/dpjzmn026/image/upload/v1445481684/code_ogmfxw.jpg") fixed top center;
     background-repeat: no-repeat;
     background-size: cover;
 }
